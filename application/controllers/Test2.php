@@ -28,9 +28,19 @@ class Test2 extends CI_Controller
         
             $text = $this->input->post('text');
             $chars = str_split($text);
+            $total = strlen($text);
+            $test = 1;
+             for($i=$chars; $i <= $total;$i++){
+                    
+                }
             foreach($chars as $char)
             {
-                echo " " .$char . "<br>";
+                for($i= 1; $i <= $test;$i++){
+                    echo " ";
+                }
+                $test++;
+               
+                echo  $char . "<br>";
             }
             echo "<a href='http://localhost/test_bca/test2'>Back</a>";
         
