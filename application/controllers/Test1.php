@@ -31,7 +31,7 @@ class Test1 extends CI_Controller
             $test = 1;
             for ( $a = $number; $a >= 1; $a--) {
                 for ( $b = $number; $b > $a; $b--) {
-                   echo " ";
+                   echo "&nbsp";
                 }
                 for ( $c = $test++; $c < ($a * 1); $c++) {
                    echo $c;
