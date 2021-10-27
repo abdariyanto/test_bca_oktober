@@ -36,7 +36,7 @@ class Test2 extends CI_Controller
             foreach($chars as $char)
             {
                 for($i= 1; $i <= $test;$i++){
-                    echo " ";
+                    echo "&nbsp";
                 }
                 $test++;
                
