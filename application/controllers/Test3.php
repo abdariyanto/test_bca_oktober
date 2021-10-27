@@ -28,13 +28,19 @@ class Test3 extends CI_Controller
         
             $number1 = $this->input->post('number1');
             $number2 = $this->input->post('number2');
-            
-            for ($i=$number1; $i<=$number2; $i++){
-                for ($j=$i; $j<=$number2; $j++){
-                echo $j;
+           
+            $test = 1;
+            for ( $a = $number2; $a >= $number1; $a--) {
+                for ( $b = $number2+1; $b > $a; $b--) {
+                   echo "  ";
                 }
-                echo "<br>";
+                for ( $c = $number1++; $c < ($a+1 * 1); $c++) {
+                   echo $c;
+                }
+                
+              echo "<br>";
             }
+          
 
             echo "<a href='http://localhost/test_bca/test3'>Back</a>";
         

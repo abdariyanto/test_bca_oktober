@@ -186,6 +186,23 @@
 
             </li>
 
+            <li class="nav-item <?php if ($title == 'Test4') {
+                                    echo " active";
+                                } else {
+                                    echo "";
+                                } ?>">
+
+                <a class="nav-link" href="<?= base_url('test4'); ?>">
+
+                    <i class="fas fa-fw fa-user"></i>
+
+                    <span>Test 4</span>
+
+                </a>
+
+
+            </li>
+
             <hr class="sidebar-divider d-none d-md-block">
 
 

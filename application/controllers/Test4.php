@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Test1 extends CI_Controller
+class Test4 extends CI_Controller
 {
     public function index()
     {
@@ -17,8 +17,8 @@ class Test1 extends CI_Controller
             $data['user'] = $this->db->get_where('user', ['id' =>
             $this->session->userdata('id')])->row_array();
 
-            $data['title'] = 'Test1';
-            $data2['isi'] = $this->load->view('view_test1', $data, TRUE);
+            $data['title'] = 'Test4';
+            $data2['isi'] = $this->load->view('view_test4', $data, TRUE);
             $this->load->view('main_view', $data2);
         }
     }
@@ -26,20 +26,22 @@ class Test1 extends CI_Controller
     public function action_test()
     {
         
-            $number = $this->input->post('number');
-            
-            $test = 1;
-            for ( $a = $number; $a >= 1; $a--) {
-                for ( $b = $number; $b > $a; $b--) {
-                   echo " ";
+            $number1 = $this->input->post('number1');
+            $number2 = $this->input->post('number2');
+           
+            for($a= $number1;$a <= $number2;$a++){
+                for($b = $number1;$b <= $number2;$b++){
+                    if($a > 1 && $a == $b){
+                        echo $b;
+                    }
+                    echo $b ;
+                    
                 }
-                for ( $c = $test++; $c < ($a * 1); $c++) {
-                   echo $c;
-                }
-                
-              echo "<br>";
+               
+                echo "<br>";
             }
-            echo "<a href='http://localhost/test_bca/test1'>Back</a>";
+
+            echo "<a href='http://localhost/test_bca/test3'>Back</a>";
         
     }
 }
