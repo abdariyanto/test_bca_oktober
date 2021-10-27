@@ -16,12 +16,12 @@
 
                     <form class="user" method="post" action="<?= base_url('test4/action_test'); ?>">
                         <div class="form-group">
-                            <input type="number1" class="form-control form-control-user" id="number1" name="number1" placeholder="Enter Number1" value=<?= set_value('number1') ?>>
+                            <input type="number" class="form-control form-control-user" id="number1" name="number1" placeholder="Enter Number1" value=<?= set_value('number1') ?>>
                             <?= form_error('number1', '<small class="text-danger pl-3">', '</small>'); ?>
                         </div>
                         <div class="form-group">
                             <input type="number2" class="form-control form-control-user" id="number2" name="number2" placeholder="Enter Number2" value=<?= set_value('number2') ?>>
-                            <?= form_error('number2', '<small class="text-danger pl-3">', '</small>'); ?>
+                            <?= form_error('number', '<small class="text-danger pl-3">', '</small>'); ?>
                         </div>
                         <button type="submit" class="btn btn-primary btn-user btn-block">
                             Proses
