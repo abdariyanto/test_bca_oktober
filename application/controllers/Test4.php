@@ -32,7 +32,9 @@ class Test4 extends CI_Controller
             for($a= $number1;$a <= $number2;$a++){
                 for($b = $number1;$b <= $number2;$b++){
                     if($a > 1 && $a == $b){
-                        echo $b;
+                        for($c = 1; $c< $b; $c++ ){
+                            echo $b;
+                        }
                     }
                     echo $b ;
                     
