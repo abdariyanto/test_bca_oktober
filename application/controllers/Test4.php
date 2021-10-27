@@ -41,7 +41,7 @@ class Test4 extends CI_Controller
                 echo "<br>";
             }
 
-            echo "<a href='http://localhost/test_bca/test3'>Back</a>";
+            echo "<a href='http://localhost/test_bca/test4'>Back</a>";
         
     }
 }
